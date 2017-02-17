@@ -1,0 +1,29 @@
+<html lang="en">
+    
+    <head>
+        <title>number guessing game</title>  
+    </head>
+<body>
+  <script>
+ 
+   const MAX_GUESS = 10
+   var computerNum = Math.floor(Math.random()* MAX_GUESS) + 1;
+   while (computerNum != guess) {
+  
+    // get users guess and store in variable    
+    var guess = prompt("enter a number: ");
+        
+    if (computerNum == guess) {
+       console.log("you guessed the number");
+       alert("correct! " + guess); 
+     }
+     else { 
+        alert("incorrect!");
+      }
+   }
+   </script>  
+    
+</body>
+</html>
+    
+    
